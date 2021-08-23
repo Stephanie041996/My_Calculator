@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function Display({ calculation }) {
   return (
@@ -8,4 +9,7 @@ function Display({ calculation }) {
   );
 }
 
+Display.propTypes = {
+  calculation: PropTypes.string.isRequired,
+};
 export default Display;
