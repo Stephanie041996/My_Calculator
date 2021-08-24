@@ -38,6 +38,24 @@ const Calculate = (data, buttonName) => {
       next += buttonName;
     }
   }
+  if (['+', '-', '*', '+'].includes(buttonName)) {
+    if (!total) {
+      total = '0';
+    }
+    if (total && !next) {
+      operation = buttonName;
+    }
+    if (total && next && operation) {
+      total = Operate(total, next, operation);
+      next = null;
+      operation = buttonName;
+    }
+  }
+  if (buttonName === '%') {
+    total *= 0.01;
+    next *= 0.01;
+  }
+  return { total, next, operation };
 };
 
 export default Calculate;
