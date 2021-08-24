@@ -3,7 +3,7 @@ import Operate from './operate';
 const Calculate = (buttonName, dataObj) => {
   let { total, next, operation } = dataObj;
   if (buttonName === '+/-') {
-    total *= `${total * -1}`;
+    total = `${total * -1}`;
     next *= -1;
   }
   if (buttonName === 'AC') {
@@ -21,16 +21,35 @@ const Calculate = (buttonName, dataObj) => {
     if (!total) {
       total = '0.';
     }
-    if (total && operation) {
-      total += '.';
+
+    if (total && !next) {
+      if (operation) {
+        next += '0.';
+      } else if (total.indexOf('.') === -1) {
+        total += '.';
+      }
     }
-    if (total && next && operation) {
-      next += '.';
-    }
-    if (total && operation && !next) {
-      next = '0.';
+
+    if (total && operation && next) {
+      if (next.indexOf('.') === -1) {
+        next += '.';
+      }
     }
   }
+  // if (buttonName === '.') {
+  //   if (!total) {
+  //     total = '0.';
+  //   }
+  //   if (total && operation) {
+  //     total += '.';
+  //   }
+  //   if (total && next && operation) {
+  //     next += '.';
+  //   }
+  //   if (total && operation && !next) {
+  //     next = '0.';
+  //   }
+  // }
   if ([...Array(10)].map((_, i) => `${i}`).includes(buttonName)) {
     if (operation === null) {
       if (total === null) {
