@@ -23,13 +23,16 @@ class App extends Component {
    });
  }
 
-   render = () => (
-     <>
-       <h1>Calculator App</h1>
-       <Display Calculate={Calculate} />
-       <ButtonPanel />
-     </>
-   )
+   render = () => {
+     const { next, total } = this.state;
+     return (
+       <>
+         <h1>Calculator App</h1>
+         <Display Calculate={next || total} />
+         <ButtonPanel clickHandler={(e) => this.handleClick(e.target.innerText)} />
+       </>
+     );
+   }
 }
 
 export default App;
