@@ -4,7 +4,9 @@ import PropTypes from 'prop-types';
 function Display({ Calculate }) {
   return (
     <>
-      <input id="result" value={Calculate || '0'} />
+      <div className="display-result">
+        <input id="result" value={Calculate || '0'} />
+      </div>
     </>
   );
 }
