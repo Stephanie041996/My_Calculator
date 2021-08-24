@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function Button({ name, handleClick }) {
   return (
     <>
-      <button type="button" onClick={handleClick}>{name}</button>
+      <button type="button" name={name} onClick={handleClick}>{name}</button>
     </>
   );
 }
