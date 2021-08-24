@@ -2,7 +2,7 @@ import Operate from './operate';
 
 const Calculate = (data, buttonName) => {
   let { total, next, operation } = data;
-  if (buttonName == '+/-') {
+  if (buttonName === '+/-') {
     total *= -1;
     next *= -1;
   }

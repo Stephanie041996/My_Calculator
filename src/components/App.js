@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <h1>Calculator App</h1>
-      <Display calculate={calculate} />
+      <Display Calculate={Calculate} />
       <ButtonPanel />
     </>
   );
