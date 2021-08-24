@@ -13,13 +13,17 @@ class App extends Component {
       operation: null,
     };
   }
-  // return (
-  //   <>
-  //     <h1>Calculator App</h1>
-  //     <Display Calculate={Calculate} />
-  //     <ButtonPanel />
-  //   </>
-  // );
+
+  const render = () =>{
+    return (
+    <>
+      <h1>Calculator App</h1>
+      <Display Calculate={Calculate} />
+      <ButtonPanel />
+    </>
+  );
+  }
+  
 }
 
 export default App;
