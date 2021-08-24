@@ -14,16 +14,22 @@ class App extends Component {
     };
   }
 
-  const render = () =>{
-    return (
-    <>
-      <h1>Calculator App</h1>
-      <Display Calculate={Calculate} />
-      <ButtonPanel />
-    </>
-  );
-  }
-  
+ handleClick = (buttonName) => {
+   const calculation = Calculate(buttonName, this.state);
+   this.state({
+     total: calculation.total,
+     next: calculation.next,
+     operation: calculation.operation,
+   });
+ }
+
+   render = () => (
+     <>
+       <h1>Calculator App</h1>
+       <Display Calculate={Calculate} />
+       <ButtonPanel />
+     </>
+   )
 }
 
 export default App;
