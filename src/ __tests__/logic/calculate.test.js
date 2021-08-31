@@ -36,11 +36,22 @@ it('Should return a negative value', () => {
   expect(res.operation).toEqual(null);
 });
 
+it('should return -ve value', () => {
+  const res = Calculate('+/-', calculate2);
+  expect(res.total).toBe('-7');
+});
+
 it('Should return a result of multiplication', () => {
   const res = Calculate('=', { total: '7', next: '10', operation: 'X' });
   expect(res.total * 1).toEqual(70);
   expect(res.next).toEqual(null);
   expect(res.operation).toEqual(null);
+});
+
+it('Multiplying positive number is not zero', () => {
+  const result = Calculate('=', { total: '2', next: '2', operation: 'X' });
+  const value = result.total * 1;
+  expect(value).not.toEqual(0);
 });
 
 it('Should return a result of subtraction', () => {
@@ -55,4 +66,18 @@ it('Should return a result of the division', () => {
   expect(res.total * 1).toEqual(0.7);
   expect(res.next).toEqual(null);
   expect(res.operation).toEqual(null);
+});
+
+it('Should return a result of the addition', () => {
+  const res = Calculate('=', { total: '7', next: '10', operation: '+' });
+  expect(res.total * 1).toEqual(17);
+  expect(res.next).toEqual(null);
+  expect(res.operation).toEqual(null);
+});
+
+it('Adding positive number is not zero', () => {
+  const result = Calculate('=', { total: '2', next: '2', operation: '+' });
+  expect(result.total * 1).not.toBe(0);
+  expect(result.next).not.toBe(0);
+  expect(result.operation).not.toBe('+');
 });
