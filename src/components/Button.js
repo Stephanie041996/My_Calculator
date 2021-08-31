@@ -24,13 +24,13 @@ function Button({
 Button.propTypes = {
   name: PropTypes.string.isRequired,
   handleClick: PropTypes.func.isRequired,
+  wide: PropTypes.bool,
   color: PropTypes.string,
-  wide: PropTypes.string,
 
 };
 Button.defaultProps = {
-  wide: '25%',
   color: 'color',
+  wide: false,
 };
 
 export default Button;
