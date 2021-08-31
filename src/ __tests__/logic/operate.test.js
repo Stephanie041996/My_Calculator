@@ -1,9 +1,9 @@
 import operate from '../../logic/operate';
 
 describe('Operations', () => {
-  it('Should return an object', () => {
+  it('Should return a string', () => {
     const res = operate('70', '7', '+');
-    expect(typeof res).toEqual('object');
+    expect(typeof res).toEqual('string');
   });
 
   it('Should be a function', () => {
@@ -21,7 +21,7 @@ describe('Operations', () => {
   });
 
   it('Should multiply 2 numbers', () => {
-    const res = operate('2', '4', '*');
+    const res = operate('2', '4', 'X');
     expect(res * 1).toEqual(8);
   });
 
