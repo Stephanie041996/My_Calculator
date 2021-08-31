@@ -1,10 +1,10 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom';
 import Display from '../../components/Display';
 
-describe('Display', () => {
-  it('should display result', () => {
-    const tree = renderer.create(<Display />).toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+test('renders Display', () => {
+  render(<Display />);
+  const el = screen.getByDisplayValue('0');
+  expect(el).toBeInTheDocument();
 });

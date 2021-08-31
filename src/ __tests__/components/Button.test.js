@@ -1,11 +1,13 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom';
 import Button from '../../components/Button';
 
-describe('Button', () => {
-  it('should renders Button', () => {
-    const clickHandler = () => '1';
-    const tree = renderer.create(<Button name="1" handleClick={clickHandler} />).toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+test('renders Button', () => {
+  const clickHandler = () => 'testBtn';
+  render(<Button type="button" name="testBtn" handleClick={clickHandler} />);
+
+  const btn = screen.getByText(/testBtn/i);
+
+  expect(btn).toBeInTheDocument();
 });

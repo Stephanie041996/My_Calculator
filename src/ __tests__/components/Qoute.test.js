@@ -1,10 +1,12 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom';
 import Qoute from '../../components/Qoute';
 
-describe('Qoute', () => {
-  it('should render qoute', () => {
-    const tree = renderer.create(<Qoute />).toJSON();
-    expect(tree).toMatchSnapshot();
+describe('renders Quote', () => {
+  test('should render qoute', () => {
+    render(<Qoute />);
+    const el = screen.getByText(/Mathematics is not about numbers/i);
+    expect(el).toBeInTheDocument();
   });
 });
