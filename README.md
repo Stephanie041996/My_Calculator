@@ -3,7 +3,7 @@
 Built a calculator for Math-magicians Inc using create-react-app.
 Math-magicians is a fictional company based in France. They have requested help to build a simple product that would assist them with their calculations. An important thing to notice is that they have asked for a product that is just fully-functional more than it needs to be beautiful these for minimal css is used. The project is focused on practicing state and props available to a react component class, it is not using hooks.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./app_screenshot2.png)
 
 ## BUILT WITH
 - JavaScript
@@ -39,7 +39,10 @@ To start the server:
 
 Go to http://localhost:3000/ in your browser to see the application running
 
+# To test the code
 
+ - Run npm test
+ - Enter 'a' to see all tests
 ## Author
 **Stephanie Sakuhuni**
 
