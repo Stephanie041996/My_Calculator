@@ -23,7 +23,7 @@ Array [
         style={
           Object {
             "background": "white",
-            "width": "50%",
+            "width": "25%",
           }
         }
         type="button"
@@ -36,7 +36,7 @@ Array [
         style={
           Object {
             "background": "white",
-            "width": "50%",
+            "width": "25%",
           }
         }
         type="button"
@@ -49,7 +49,7 @@ Array [
         style={
           Object {
             "background": "white",
-            "width": "50%",
+            "width": "25%",
           }
         }
         type="button"
@@ -62,7 +62,7 @@ Array [
         style={
           Object {
             "background": "color",
-            "width": "50%",
+            "width": "25%",
           }
         }
         type="button"
@@ -77,7 +77,7 @@ Array [
         style={
           Object {
             "background": "white",
-            "width": "50%",
+            "width": "25%",
           }
         }
         type="button"
@@ -90,7 +90,7 @@ Array [
         style={
           Object {
             "background": "white",
-            "width": "50%",
+            "width": "25%",
           }
         }
         type="button"
@@ -103,7 +103,7 @@ Array [
         style={
           Object {
             "background": "white",
-            "width": "50%",
+            "width": "25%",
           }
         }
         type="button"
@@ -116,7 +116,7 @@ Array [
         style={
           Object {
             "background": "color",
-            "width": "50%",
+            "width": "25%",
           }
         }
         type="button"
@@ -131,7 +131,7 @@ Array [
         style={
           Object {
             "background": "white",
-            "width": "50%",
+            "width": "25%",
           }
         }
         type="button"
@@ -144,7 +144,7 @@ Array [
         style={
           Object {
             "background": "white",
-            "width": "50%",
+            "width": "25%",
           }
         }
         type="button"
@@ -157,7 +157,7 @@ Array [
         style={
           Object {
             "background": "white",
-            "width": "50%",
+            "width": "25%",
           }
         }
         type="button"
@@ -170,7 +170,7 @@ Array [
         style={
           Object {
             "background": "color",
-            "width": "50%",
+            "width": "25%",
           }
         }
         type="button"
@@ -185,7 +185,7 @@ Array [
         style={
           Object {
             "background": "white",
-            "width": "50%",
+            "width": "25%",
           }
         }
         type="button"
@@ -198,7 +198,7 @@ Array [
         style={
           Object {
             "background": "white",
-            "width": "50%",
+            "width": "25%",
           }
         }
         type="button"
@@ -211,7 +211,7 @@ Array [
         style={
           Object {
             "background": "white",
-            "width": "50%",
+            "width": "25%",
           }
         }
         type="button"
@@ -224,7 +224,7 @@ Array [
         style={
           Object {
             "background": "color",
-            "width": "50%",
+            "width": "25%",
           }
         }
         type="button"
@@ -252,7 +252,7 @@ Array [
         style={
           Object {
             "background": "white",
-            "width": "50%",
+            "width": "25%",
           }
         }
         type="button"
@@ -265,7 +265,7 @@ Array [
         style={
           Object {
             "background": "color",
-            "width": "50%",
+            "width": "25%",
           }
         }
         type="button"
